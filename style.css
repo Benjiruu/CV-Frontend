@@ -72,9 +72,10 @@ address {
     }
 
     #photo {
-        width: 320px;
-        height: 299px;
-        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 20px;/
     }
 
     #bio {
