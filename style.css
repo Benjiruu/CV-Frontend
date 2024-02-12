@@ -72,8 +72,8 @@ address {
     }
 
     #photo {
-        width: 100%;
-        height: auto;
+        width: 320px;
+        height: 299px;
         margin-bottom: 20px;
     }
 
