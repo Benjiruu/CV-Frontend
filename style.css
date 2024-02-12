@@ -11,8 +11,8 @@ li {
 
 body {
     font-family: Georgia, serif;
-    background-color: hsl(0, 0%, 50%);
-    color: hsl(40, 50%, 60%);
+    background-color: hsla(0, 0%, 33%, 0.685);
+    color: hsl(0, 0%, 1%);
 }
 
 header {
