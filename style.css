@@ -1,5 +1,10 @@
-
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -32,13 +37,16 @@ main {
 }
 
 #photo img {
-    max-width: 70%;
+    max-width: 250px;
     height: auto;
     display: block;
-    margin: 0 auto 20px; 
+    margin: 0 auto 20px;
 }
 
-#bio h2, #movies h2, #awards h2, #contact h2 {
+#bio h2,
+#movies h2,
+#awards h2,
+#contact h2 {
     font-size: 30px;
     margin-top: 30px;
 }
@@ -52,7 +60,29 @@ address {
     font-style: normal;
 }
 
-/*layout reponsiv*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* För smala skärmar */
+@media (max-width: 599px) {
+    main {
+        flex-direction: column;
+    }
+
+    #photo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #bio {
+        width: 100%;
+    }
+}
+
+/* För breda skärmar */
 @media (min-width: 600px) {
     main {
         display: flex;
@@ -60,11 +90,17 @@ address {
     }
 
     #photo {
-        flex: 1 1 300px; 
+        flex: 0 0 300px;
         margin-right: 20px;
     }
 
-    #bio, #movies, #awards, #contact {
-        flex: 2 1 300px; 
+    #bio {
+        flex: 1;
+    }
+
+    #movies,
+    #awards {
+        flex-basis: 50%;
+        margin-bottom: 20px;
     }
 }
